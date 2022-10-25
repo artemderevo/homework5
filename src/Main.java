@@ -1,11 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 17;
-        if (age >= 18) {
-            System.out.println("Поздравляем с совершеннолетием!");
+        int age = 16;
+        if (age >= 7 && age < 18){
+            System.out.println("Ребенок идет в школу");
         }
-        if (age < 18) {
-            System.out.println("Возраст совершеннолетия не наступил");
+        if (age >= 18 && age < 24){
+            System.out.println("Человек  идет в университет");
         }
+        if (age >= 24){
+            System.out.println("Человек идет искать работу");
+        }
+
     }
 }
