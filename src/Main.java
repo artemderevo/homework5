@@ -8,7 +8,7 @@ public class Main {
            System.out.println("В вагоне есть стоячие места.");
        }
        if (slots >= 102){
-           System.out.println("Вагон заполнен.");
+           System.out.println("Вагон заполнен");
        }
 
 
