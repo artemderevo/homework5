@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 16;
-        if (age >= 7 && age < 18){
-            System.out.println("Ребенок идет в школу");
+        int slots = 60;
+       if (slots >= 0 && slots < 59){
+            System.out.println("В вагоне есть свободные сидячие места.");
         }
-        if (age >= 18 && age < 24){
-            System.out.println("Человек  идет в университет");
-        }
-        if (age >= 24){
-            System.out.println("Человек идет искать работу");
-        }
+       if (slots >= 60 && slots < 102){
+           System.out.println("В вагоне есть стоячие места.");
+       }
+       if (slots >= 102){
+           System.out.println("Вагон заполнен.");
+       }
+
 
     }
 }
