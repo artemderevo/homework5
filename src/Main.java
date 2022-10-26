@@ -1,19 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 18;
-        boolean SmallKid = age >= 2 && age <= 6;
-        boolean YoungBoy = age >= 7 && age < 18;
-        boolean SmartBoy = age >= 18 && age < 24;
-        boolean SeriosMan = age >=24;
+        int age = 5;
+        boolean SmallKid = age <= 5;
+        boolean SmallBoy = age >= 6 && age < 14;
+        boolean YoungBoy = age >= 14;
         if (SmallKid) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад.");
-        } else if (YoungBoy) {
-            System.out.printf("Если возраст человека равен " + age + ", то ему нужно ходить в школу.");
-        }
-        if (SmartBoy) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно в университет.");
-        } else if (SeriosMan) {
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу.");
+            System.out.println("Слишком маленький возраст для аттракционов.");
+        } else if (SmallBoy) {
+            System.out.println("Можно кататься на аттракционах, но тольок в сопровождении взрослого.");
+        } if (YoungBoy) {
+            System.out.println("Можно кататься на аттракционах.");
         }
 
 
