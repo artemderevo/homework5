@@ -1,15 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 5;
-        boolean SmallKid = age <= 5;
-        boolean SmallBoy = age >= 6 && age < 14;
-        boolean YoungBoy = age >= 14;
-        if (SmallKid) {
-            System.out.println("Слишком маленький возраст для аттракционов.");
-        } else if (SmallBoy) {
-            System.out.println("Можно кататься на аттракционах, но тольок в сопровождении взрослого.");
-        } if (YoungBoy) {
-            System.out.println("Можно кататься на аттракционах.");
+        int one = 1;
+        int two = 2;
+        int free = 3;
+        if (one < two) {
+            System.out.println("One меньше, чем two");
+        } else if (free > two) {
+            System.out.println("Невозможно");
+        }
+        if (two < free) {
+            System.out.println("Two меньше, чем free.");
+        } else if (two > free) {
+            System.out.println("Невозможною");
         }
 
 
