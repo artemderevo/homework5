@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        int slots = 102;
-       if (slots >= 0 && slots < 30){
-            System.out.println("В вагоне есть свободные сидячие места.");
-        } else if (slots >= 30 && slots < 59) {
-           System.out.println("В вагоне есть половина сидячих мест.");
-       }
-        if (slots >= 60 && slots < 81){
-           System.out.println("В вагоне есть стоячие места.");
-       } else if (slots >= 81 && slots <100) {
-            System.out.println("В вагоне половина стоячих мест.");
+        int age = 18;
+        boolean SmallKid = age >= 2 && age <= 6;
+        boolean YoungBoy = age >= 7 && age < 18;
+        boolean SmartBoy = age >= 18 && age < 24;
+        boolean SeriosMan = age >=24;
+        if (SmallKid) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад.");
+        } else if (YoungBoy) {
+            System.out.printf("Если возраст человека равен " + age + ", то ему нужно ходить в школу.");
         }
-       if (slots <= 101){
-           System.out.println("Вагон почти заполнен.");
-       } else if (slots <= 102){
-           System.out.println("Вагон заполнен.");
-       }
+        if (SmartBoy) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно в университет.");
+        } else if (SeriosMan) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу.");
+        }
+
 
 
     }
